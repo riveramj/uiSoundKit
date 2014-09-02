@@ -1,5 +1,5 @@
 @import "settings";
-@import "foundation";
+@import "foundation/components/grid";
 
 // Or selectively include components
 // @import
@@ -14,7 +14,6 @@
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
 //   "foundation/components/forms",
-//   "foundation/components/grid",
 //   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
 //   "foundation/components/keystrokes",
@@ -38,3 +37,109 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+#intro {
+  background-color: #14D2D9;
+}
+
+#call-to-action{
+ @include grid-row(); 
+}
+
+#action-bar {
+  @include grid-column(12);
+
+  padding-top: 25px;
+
+  text-align: right;
+/*  margin: 20px;*/
+
+  #purchase, #samples {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  #purchase {
+    border: 3px solid #ffffff;
+    @include radius(8px);
+    padding: 5px 15px;
+    margin-right: 35px;
+  }  
+}
+
+#header-container {
+  text-align: center;
+
+  @include grid-row(); 
+
+  header {
+    @include grid-column(12);
+    padding-top: 50px;
+
+    #header-intro {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 40px;
+    }
+
+    #soundKit-logo {
+      padding-top: 30px;
+    }
+
+    #soundKit-tagline {
+      padding-top: 5px;
+
+      font-size: 26px;
+      color: #ffffff;
+    }
+  }
+}
+#summary-container {
+  @include grid-row(); 
+  padding-top: 90px;
+
+  #summary {
+    @include grid-column(12);
+    padding-top: 30px;
+
+    @media #{$large-up} { 
+      @include grid-column($columns:8, $pull:4);
+    }
+  }
+
+  #summary-header {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  #summary-details {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    
+    line-height: 33px;
+  }
+
+  #summary-iphone { 
+    @include grid-column(12);
+    text-align: center;
+
+    @media #{$large-up} { 
+      @include grid-column($columns:4, $push:8);
+    }
+  }
+}
+
