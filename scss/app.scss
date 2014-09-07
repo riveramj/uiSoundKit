@@ -254,3 +254,41 @@ div.icon-value {
     }
   }
 }
+
+section.audio-details {
+  background-color: $white;
+  padding-top: 100px;
+}
+
+div.audio-details {
+  @include grid-row(); 
+
+  .audio-detail {
+    @include grid-column(12);
+
+    text-align: center;
+ 
+    color: $blue;
+
+    @media #{$large-up} { 
+      @include grid-column(6);
+    }
+
+    h3 {
+      font-weight: $light;
+      font-size: 28px;
+
+      margin: 23px 0 37px;
+    }
+
+    p {
+      font-weight: $light;
+      font-size: 16px;
+      padding-bottom: 80px;
+
+      @media #{$large-up} {
+        padding: 0 69px 80px;
+      }
+    }
+  }
+}
