@@ -292,3 +292,23 @@ div.audio-details {
     }
   }
 }
+
+section.sample-sounds {
+  padding-top: 70px;
+  background-color: $red;
+}
+
+div.sample-sounds {
+  @include grid-row(); 
+
+  #sample-headline {
+    text-align: center;
+    padding-bottom: 40px;
+
+    h2 {
+      font-weight: $light;
+      font-size: 40px;
+      color: $white;
+    }
+  }
+}
