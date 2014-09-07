@@ -106,6 +106,7 @@ body {
 #summary-container {
   @include grid-row(); 
   padding-top: 90px;
+  padding-bottom: 50px;
 
   #summary {
     @include grid-column(12);
