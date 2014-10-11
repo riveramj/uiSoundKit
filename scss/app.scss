@@ -378,5 +378,24 @@ div.purchase-now{
     color: $green;
     margin-top: 75px;
   }
+}
 
+section.sound-list {
+  background-color: $blue;
+}
+
+div.sound-list {
+  @include grid-row();
+
+  #list-header {
+    text-align: center;
+
+    h2 {
+      color: $white;
+      font-weight: $light;
+      font-size: 40px;
+
+      margin: 30px 0 25px;
+    }
+  }
 }
