@@ -60,7 +60,7 @@ body {
 }
 
 #call-to-action{
- @include grid-row(); 
+ @include grid-row();
 }
 
 #action-bar {
@@ -83,13 +83,13 @@ body {
     @include radius(8px);
     padding: 5px 15px;
     margin-right: 35px;
-  }  
+  }
 }
 
 #header-container {
   text-align: center;
 
-  @include grid-row(); 
+  @include grid-row();
 
   header {
     @include grid-column(12);
@@ -114,14 +114,14 @@ body {
   }
 }
 #summary-container {
-  @include grid-row(); 
+  @include grid-row();
   padding-top: 90px;
 
   #summary {
     @include grid-column(12);
     padding-top: 30px;
 
-    @media #{$large-up} { 
+    @media #{$large-up} {
       @include grid-column($columns:8, $pull:4);
     }
   }
@@ -134,20 +134,20 @@ body {
     line-height: 40px;
     margin-bottom: 20px;
   }
-  
+
   #summary-details {
     color: $white;
     font-size: 24px;
     font-weight: $light;
-    
+
     line-height: 33px;
   }
 
-  #summary-iphone { 
+  #summary-iphone {
     @include grid-column(12);
     text-align: center;
 
-    @media #{$large-up} { 
+    @media #{$large-up} {
       @include grid-column($columns:4, $push:8);
     }
   }
@@ -166,7 +166,7 @@ div.teaser-sounds {
   #alert-teaser, #musical-tones-teaser, #inputs-teaser {
     @include grid-column(12);
 
-    @media #{$large-up} { 
+    @media #{$large-up} {
       @include grid-column(4);
     }
   }
@@ -188,11 +188,11 @@ div.teaser-sounds {
     @include grid-column(12);
 
     color: $red;
-    
+
     font-weight: $regular;
     font-style: italic;
     font-size: 26px;
-    
+
     text-align: center;
   }
 }
@@ -210,35 +210,35 @@ div.icon-value {
     @include grid-column(12);
     text-align: center;
 
-    @media #{$large-up} { 
+    @media #{$large-up} {
       @include grid-column(5);
     }
   }
 
   #value-description {
     @include grid-column(12);
-    
+
     text-align: left;
     padding-top: 10px;
-    
-    @media #{$large-up} { 
+
+    @media #{$large-up} {
       @include grid-column(7);
     }
 
     h2 {
       padding-left: 20px;
-      
+
       color: $white;
       font-size: 32px;
       font-weight: $bold;
 
       line-height: 40px;
 
-      @media #{$large-up} { 
+      @media #{$large-up} {
         width: 400px;
       }
     }
-    
+
     p {
       padding-left: 20px;
 
@@ -248,7 +248,7 @@ div.icon-value {
 
       line-height: 33px;
 
-      @media #{$large-up} { 
+      @media #{$large-up} {
         width: 500px;
       }
     }
@@ -261,16 +261,16 @@ section.audio-details {
 }
 
 div.audio-details {
-  @include grid-row(); 
+  @include grid-row();
 
   .audio-detail {
     @include grid-column(12);
 
     text-align: center;
- 
+
     color: $blue;
 
-    @media #{$large-up} { 
+    @media #{$large-up} {
       @include grid-column(6);
     }
 
@@ -294,12 +294,12 @@ div.audio-details {
 }
 
 section.sample-sounds {
-  padding-top: 70px;
+  padding: 70px 0 90px;
   background-color: $red;
 }
 
 div.sample-sounds {
-  @include grid-row(); 
+  @include grid-row();
 
   #sample-headline {
     text-align: center;
@@ -310,5 +310,21 @@ div.sample-sounds {
       font-size: 40px;
       color: $white;
     }
+  }
+
+  .sample-sound {
+    @include radius(6px);
+    border: solid $white 3px;
+
+    width: 300px;
+    padding: 15px 0;
+    margin: 0 7px 20px 0;
+
+    color: white;
+    font-size: 20px;
+
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
   }
 }
