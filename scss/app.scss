@@ -399,3 +399,29 @@ div.sound-list {
     }
   }
 }
+
+section.about-soundkit {
+  background-color: $green;
+  padding-bottom: 20px;
+}
+
+div.about-soundkit {
+  @include grid-row();
+
+  #about-header {
+    text-align: center;
+
+    h3 {
+      color: $white;
+      font-size: 32px;
+      font-weight: $regular;
+
+      margin: 20px 0 25px;
+    }
+  }
+
+  font-size: 16px;
+  font-weight: $light;
+
+  color: $white;
+}
