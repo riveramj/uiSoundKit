@@ -420,8 +420,28 @@ div.about-soundkit {
     }
   }
 
-  font-size: 16px;
-  font-weight: $light;
+  #soundkit-background {
+    margin: 0 75px;
+    font-size: 16px;
+    font-weight: $light;
 
-  color: $white;
+    color: $white;
+  }
+}
+
+
+section.footer {
+  margin: 40px 0 60px;
+
+}
+
+div.footer {
+  @include grid-row();
+
+  text-align: right;
+
+  color: $red;
+  font-size: 14px;
+  font-weight: $regular;
+  font-style: italic;
 }
