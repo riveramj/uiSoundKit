@@ -43,7 +43,8 @@ $blue: #14D2D9;
 $green: #04E858;
 $white: #ffffff;
 
-$bold: 600;
+$bold: 700;
+$semibold: 600;
 $regular: 400;
 $light: 300;
 
@@ -74,7 +75,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: $white;
-    font-weight: $bold;
+    font-weight: $semibold;
     font-size: 22px;
   }
 
@@ -97,7 +98,7 @@ body {
 
     #header-intro {
       color: $white;
-      font-weight: $bold;
+      font-weight: $semibold;
       font-size: 40px;
     }
 
@@ -312,6 +313,10 @@ div.sample-sounds {
     }
   }
 
+  .sample-sound-container {
+    text-align: center;
+  }
+
   .sample-sound {
     @include radius(6px);
     border: solid $white 3px;
@@ -327,4 +332,51 @@ div.sample-sounds {
     outline: none;
     cursor: pointer;
   }
+}
+
+section.purchase-now {
+  padding: 120px 0 100px;
+}
+
+div.purchase-now{
+  @include grid-row();
+
+  text-align: center;
+
+  #purchase-headline {
+    text-align: center;
+    margin-bottom: 70px;
+
+    h2 {
+      max-width: 500px;
+      margin: 0 auto;
+
+      color: $green;
+      font-size: 42px;
+      font-weight: $semibold;
+    }
+  }
+
+  #purchase {
+    padding: 20px 50px;
+
+    @include radius(8px);
+    border: solid 4px $green;
+    color: $green;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 34px;
+    font-weight: $semibold;
+  }
+
+  #delivery-info {
+    font-size: 16px;
+    font-weight: $light;
+
+    color: $green;
+    margin-top: 75px;
+  }
+
 }
