@@ -17,6 +17,14 @@
   <script type="text/javascript">
   $(document).ready(function() {
     $('#samples').smoothScroll();
+
+    $("div.sound-list").click(function(){
+		  $('#full-sound-list').slideUp();
+
+		  if(!$('#full-sound-list').is(":visible")) {
+			  $('#full-sound-list').slideDown();
+		  }
+	  })
   });
   </script>
 
@@ -157,6 +165,15 @@
       <div id="list-header">
         <h2>Complete Sound Effects List</h2>
       </div>
+      <ul id="full-sound-list">
+        <li>Sound</li>
+        <li>Sound</li>
+        <li>Sound</li>
+        <li>Sound</li>
+        <li>Sound</li>
+        <li>Sound</li>
+        <li>Sound</li>
+      </ul>
     </div>
   </section>
 

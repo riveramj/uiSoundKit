@@ -351,6 +351,8 @@ section.sound-list {
 div.sound-list {
   @include grid-row();
 
+  cursor: pointer;
+
   #list-header {
     text-align: center;
 
@@ -361,6 +363,11 @@ div.sound-list {
 
       margin: 30px 0 25px;
     }
+  }
+
+  #full-sound-list {
+    display: none;
+    list-style: none;
   }
 }
 
