@@ -11,6 +11,15 @@
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/smoothScroll.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('#samples').smoothScroll();
+  });
+  </script>
+
 </head>
 <body>
   <section id="intro">
@@ -111,7 +120,7 @@
   </section>
 
   <section class="sample-sounds">
-    <a name="sample-sounds"></a>
+    <a id="sample-sounds"></a>
     <div class="sample-sounds">
       <div id="sample-headline">
         <h2>Take a listen.</h2>
