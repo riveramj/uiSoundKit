@@ -346,12 +346,11 @@ div.purchase-now{
 
 section.sound-list {
   background-color: $blue;
+  cursor: pointer;
 }
 
 div.sound-list {
   @include grid-row();
-
-  cursor: pointer;
 
   #list-header {
     text-align: center;
