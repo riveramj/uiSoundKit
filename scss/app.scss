@@ -416,6 +416,10 @@ div.footer {
   font-size: 14px;
   font-weight: $regular;
   font-style: italic;
+
+  a {
+    color: $red;
+  }
 }
 
 .preview-container {
