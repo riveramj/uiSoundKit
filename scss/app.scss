@@ -1,8 +1,10 @@
 @import "settings";
 @import "foundation/components/grid";
 
-$red: #CF000F;
+$red: #E5563D;
 $blue: #14D2D9;
+$light-blue: #5AB3EB;
+$dark-blue: #35455C;
 $green: #04E858;
 $white: #ffffff;
 
@@ -19,7 +21,7 @@ body {
 
 
 #intro {
-  background-color: $blue;
+  background-color: $light-blue;
   padding-bottom: 100px;
 }
 
@@ -163,7 +165,7 @@ div.teaser-sounds {
 }
 
 section.icon-value {
-  background-color: $green;
+  background-color: $dark-blue;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -233,7 +235,7 @@ div.audio-details {
 
     text-align: center;
 
-    color: $blue;
+    color: $red;
 
     @media #{$large-up} {
       @include grid-column(6);
@@ -260,7 +262,7 @@ div.audio-details {
 
 section.sample-sounds {
   padding: 70px 0 90px;
-  background-color: $red;
+  background-color: $light-blue;
 }
 
 div.sample-sounds {
@@ -315,7 +317,7 @@ div.purchase-now{
       max-width: 500px;
       margin: 0 auto;
 
-      color: $green;
+      color: $red;
       font-size: 42px;
       font-weight: $semibold;
     }
@@ -325,8 +327,8 @@ div.purchase-now{
     padding: 20px 50px;
 
     @include radius(8px);
-    border: solid 4px $green;
-    color: $green;
+    border: solid 4px $red;
+    color: $red;
 
     text-transform: uppercase;
     text-decoration: none;
@@ -339,13 +341,13 @@ div.purchase-now{
     font-size: 16px;
     font-weight: $light;
 
-    color: $green;
+    color: $red;
     margin-top: 75px;
   }
 }
 
 section.sound-list {
-  background-color: $blue;
+  background-color: $red;
   cursor: pointer;
 }
 
@@ -371,7 +373,7 @@ div.sound-list {
 }
 
 section.about-soundkit {
-  background-color: $green;
+  background-color: $dark-blue;
   padding-bottom: 20px;
 }
 
