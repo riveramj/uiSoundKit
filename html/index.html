@@ -24,8 +24,15 @@
 		  if(!$('#full-sound-list').is(":visible")) {
 			  $('#full-sound-list').slideDown();
 		  }
-	  })
+	  });
   });
+
+  function play(sound){
+    var name = $(sound).text().split(" ").join("");
+    var audio = document.getElementById(name);
+    audio.play();
+  };
+
   </script>
 
 </head>
@@ -134,15 +141,32 @@
         <h2>Take a listen.</h2>
       </div>
       <div class="sample-sound-container">
-        <button class="sample-sound">Old School Siren</button>
-        <button class="sample-sound">Space Organ (Loop)</button>
-        <button class="sample-sound">Echo Clicker</button>
-        <button class="sample-sound">Old School Siren</button>
-        <button class="sample-sound">Space Organ (Loop)</button>
-        <button class="sample-sound">Echo Clicker</button>
-        <button class="sample-sound">Old School Siren</button>
-        <button class="sample-sound">Space Organ (Loop)</button>
-        <button class="sample-sound">Echo Clicker</button>
+        <button class="sample-sound" onclick="play(this)">Affirmative</button>
+        <audio id="Affirmative"><source src="samples/Affirmative.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Bongo Roll</button>
+        <audio id="BongoRoll"><source src="samples/BongoRoll.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Coins Dropping</button>
+        <audio id="CoinsDropping"><source src="samples/CoinsDropping.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Enlightening</button>
+        <audio id="Enlightening"><source src="samples/Enlightening.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Rewind</button>
+        <audio id="Rewind"><source src="samples/Rewind.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Satifying Click</button>
+        <audio id="SatifyingClick"><source src="samples/SatifyingClick.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Scanning For Robots</button>
+        <audio id="ScanningForRobots"><source src="samples/ScanningForRobots.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Sunrise Chord</button>
+        <audio id="SunriseChord"><source src="samples/SunriseChord.mp3"></audio>
+
+        <button class="sample-sound" onclick="play(this)">Train Station</button>
+        <audio id="TrainStation"><source src="samples/TrainStation.mp3"></audio>
       </div>
     </div>
   </section>
