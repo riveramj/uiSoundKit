@@ -309,6 +309,12 @@ div.sample-sounds {
     background-color: transparent;
     outline: none;
     cursor: pointer;
+
+    &:hover {
+      border-color: $light-blue;
+      color: $light-blue;
+      background-color: $white;
+    }
   }
 }
 
