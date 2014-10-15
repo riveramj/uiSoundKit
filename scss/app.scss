@@ -353,6 +353,12 @@ div.purchase-now{
 
     font-size: 34px;
     font-weight: $semibold;
+
+    &:hover {
+      color: $white;
+      background-color: $red;
+      border-color: $white;
+    }
   }
 
   #delivery-info {
