@@ -42,13 +42,25 @@ body {
     color: $white;
     font-weight: $semibold;
     font-size: 22px;
+
+    @include radius(8px);
+    padding: 5px 15px;
   }
 
   #purchase {
-    border: 3px solid $white;
-    @include radius(8px);
-    padding: 5px 15px;
     margin-right: 35px;
+    border: 3px solid $white;
+
+    &:hover {
+      border-color: $light-blue;
+      color: $light-blue;
+      background-color: $white;
+    }
+  }
+
+  #samples:hover {
+    color: $light-blue;
+    background-color: $white;
   }
 }
 
@@ -437,10 +449,4 @@ div.footer {
     }
   }
 
-}
-
-
-
-.preview-container {
-  display: none;
 }
