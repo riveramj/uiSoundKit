@@ -367,8 +367,17 @@ div.sound-list {
   }
 
   #full-sound-list {
+    text-align: center;
     display: none;
-    list-style: none;
+
+    table {
+      display: inline-block;
+      text-align: left;
+
+      td {
+        width: 25%;
+      }
+    }
   }
 }
 
