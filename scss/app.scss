@@ -410,17 +410,27 @@ section.footer {
 div.footer {
   @include grid-row();
 
-  text-align: right;
-
   color: $red;
   font-size: 14px;
   font-weight: $regular;
   font-style: italic;
 
-  a {
-    color: $red;
+  #copyright {
+    float: right;
   }
+
+  #legal {
+    float: left;
+
+    a {
+      color: $red;
+      font-style: normal;
+    }
+  }
+
 }
+
+
 
 .preview-container {
   display: none;
