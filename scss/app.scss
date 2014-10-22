@@ -367,6 +367,10 @@ div.purchase-now{
 
     color: $red;
     margin-top: 75px;
+
+    a, a:visited {
+      color: $red;
+    }
   }
 }
 
@@ -431,6 +435,12 @@ div.about-soundkit {
     font-weight: $light;
 
     color: $white;
+
+    a, a:visited {
+      color: $white;
+    }
+
+
   }
 }
 
