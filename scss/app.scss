@@ -132,7 +132,9 @@ body {
       margin-left: 52px;
       padding: 58px 57px 70px 0;
 
-      cursor: pointer;
+      video {
+        cursor: pointer;
+      }
     }
 
     @media #{$large-up} {
@@ -197,6 +199,17 @@ div.icon-value {
   #ipad-value {
     @include grid-column(12);
     text-align: center;
+
+    #ipad-container {
+      background-image: url("../images/iPad.png");
+      background-repeat: no-repeat;
+      margin-left: 54px;
+      padding: 40px 59px 70px 0;
+
+      video {
+        cursor: pointer;
+      }
+    }
 
     @media #{$large-up} {
       @include grid-column(5);
