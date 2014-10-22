@@ -12,8 +12,14 @@ $(document).ready(function() {
 
 function startVideo(video) {
   var soundVideo = document.getElementById(video);
+  soundVideo.addEventListener("ended", resetVideo, false);
   soundVideo.play();
 };
+
+function resetVideo() {
+    // resets the video element by resetting the source
+    this.src = this.src
+}
 
 function play(sound){
   var name = $(sound).text().split(" ").join("");
