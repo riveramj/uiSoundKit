@@ -131,6 +131,8 @@ body {
       background-repeat: no-repeat;
       margin-left: 52px;
       padding: 58px 57px 70px 0;
+
+      cursor: pointer;
     }
 
     @media #{$large-up} {

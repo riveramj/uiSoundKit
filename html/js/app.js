@@ -10,6 +10,11 @@ $(document).ready(function() {
   });
 });
 
+function startVideo(video) {
+  var soundVideo = document.getElementById(video);
+  soundVideo.play();
+};
+
 function play(sound){
   var name = $(sound).text().split(" ").join("");
   var audio = document.getElementById(name);
