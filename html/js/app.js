@@ -10,16 +10,21 @@ $(document).ready(function() {
   });
 });
 
-function startVideo(video) {
-  var soundVideo = document.getElementById(video);
-  soundVideo.addEventListener("ended", resetVideo, false);
-  soundVideo.play();
-};
+$(document).on('click', '#iphone-video, #ipad-video', function (e) {
+    var video = $(this).get(0);
+ 
+    $(this).on('ended',function(){
+      video.load();     
+    });
 
-function resetVideo() {
-    // resets the video element by resetting the source
-    this.src = this.src
-}
+    if (video.paused === false) {
+        video.pause();
+    } else {
+        video.play();
+    }
+
+    return false;
+});
 
 function play(sound){
   var name = $(sound).text().split(" ").join("");
