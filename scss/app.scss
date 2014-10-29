@@ -130,6 +130,8 @@ body {
       background-image: url("../images/iPhone.png");
       background-repeat: no-repeat;
       
+      margin-left: 50%;
+
       padding: 58px 35px 70px 14px;
       float: left;
       
@@ -143,7 +145,7 @@ body {
 
       #iphone-container {
         margin-left: 52px;
-        padding: 58px 57px 70px 0;
+        padding: 58px 57px 70px 15px;
       }
     }
   }
@@ -210,6 +212,8 @@ div.icon-value {
       background-image: url("../images/ipad.png");
       background-repeat: no-repeat;
      
+      margin-left: 50%;
+
       padding: 39px 35px 70px 15px;
       float: left;
 
@@ -221,7 +225,7 @@ div.icon-value {
     @media #{$large-up} {
       #ipad-container {
         margin-left: 54px;
-        padding: 40px 59px 70px 0;
+        padding: 40px 59px 70px 15px;
       }
       
       @include grid-column(5);
