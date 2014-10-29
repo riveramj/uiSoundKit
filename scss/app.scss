@@ -129,9 +129,7 @@ body {
     #iphone-container {
       background-image: url("../images/iPhone.png");
       background-repeat: no-repeat;
-      margin-left: 52px;
-      padding: 58px 57px 70px 0;
-
+      
       video {
         cursor: pointer;
       }
@@ -139,6 +137,11 @@ body {
 
     @media #{$large-up} {
       @include grid-column($columns:4, $push:8);
+
+      #iphone-container {
+        margin-left: 52px;
+        padding: 58px 57px 70px 0;
+      }
     }
   }
 }
