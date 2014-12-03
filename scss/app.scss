@@ -496,6 +496,11 @@ div.sound-list {
   @include grid-row();
 
   #list-header {
+    .down-arrow {
+      display: inline-block;
+      margin-top: -14px;
+    }
+
     text-align: center;
 
     h2 {
@@ -503,7 +508,11 @@ div.sound-list {
       font-weight: $light;
       font-size: 40px;
 
+      display: inline-block;
+
       margin: 30px 0 25px;
+
+      padding: 0 46px;
     }
   }
 
