@@ -356,6 +356,81 @@ div.sample-sounds {
   }
 }
 
+section.weekly-sound {
+  background-color: $red;
+}
+
+div.weekly-sound {
+  color: $white;
+  padding: 35px 0 50px;
+  text-align: center;
+
+  h2{
+    font-weight: $light;
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  #mc_embed_signup {
+    width: 40%;
+    margin: 0 auto;
+    height: 45px;
+  }
+  #mce-EMAIL {
+    float: left;
+    width: 416px;
+    padding: 5px 12px;
+
+    font-size: 28px;
+    font-weight: $light;
+    color: $red;
+    
+    @include radius(8px); 
+    border: none;
+
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $red;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $red;
+    }
+
+    &:-ms-input-placeholder {  
+      color: $red;
+    }
+  }
+  #mc-embedded-subscribe {
+    float: right;
+    padding: 7px 18px;
+    border: 3px solid $white;
+    
+    background: none;
+    
+    @include radius(8px);
+    color: $white;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover {
+      border-color: $red;
+      background-color: $white;
+      color: $red;
+    }
+
+    &:focus {
+      outline:0;
+    }
+  }
+}
+
+
 section.purchase-now {
   padding: 120px 0 100px;
 }
