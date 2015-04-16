@@ -1,29 +1,9 @@
-# Foundation Compass Template
+### Introducing
+##SoundKit
+###Because your UI should sound as good as it looks.
 
-The easiest way to get started with Foundation + Compass.
+SoundKit is a professional sound library designed for UI projects.
 
-## Requirements
+Featuring 300 professional, royalty free sound effects, designed for use in mobile and desktop app design. Each sound has been custom crafted for UI applications. Designed to sound great on mobile devices as well as high end speakers.
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
-
-## Quickstart
-
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
-
-```bash
-compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+This is the source code for [soundkit.io](http://soundkit.io). Visit us today to hear how you good your UI could be!
