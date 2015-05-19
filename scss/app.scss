@@ -219,21 +219,28 @@ div.icon-value {
     #ipad-container {
       background-image: url("../images/ipad.png");
       background-repeat: no-repeat;
-     
-      margin-left: 35%;
-
-      padding: 39px 35px 70px 15px;
-      float: left;
+      
+      background-position-x: 50%;
+      
+      width: 100%;
+      padding: 39px 0 70px;
 
       video {
+        margin-left: -5px;
         cursor: pointer;
+
+        @media #{$large-up} {
+          margin-left: 0;
+        }
       }
     }
 
     @media #{$large-up} {
       #ipad-container {
+        width: initial;
+        background-position-x: 0;
         margin-left: 54px;
-        padding: 40px 59px 70px 15px;
+        padding: 40px 73px 70px 15px;
       }
       
       @include grid-column(5);
