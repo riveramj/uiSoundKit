@@ -134,6 +134,14 @@ body {
       background-position-x: 50%;
 
       padding: 58px 0 70px;
+
+      @media #{$large-up} {
+        width: initial;
+        background-position-x: 0;
+        margin-left: 40%;
+        padding: 58px 35px 70px 14px;
+        float: left;
+      }
       
       video {
         cursor: pointer;
