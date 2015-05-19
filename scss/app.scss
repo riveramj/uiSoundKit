@@ -41,7 +41,11 @@ body {
     text-decoration: none;
     color: $white;
     font-weight: $semibold;
-    font-size: 22px;
+    font-size: 19px;
+
+    @media #{$large-up} {
+      font-size: 22px;
+    }
 
     @include radius(8px);
     padding: 5px 15px;
@@ -391,9 +395,9 @@ div.weekly-sound {
     height: 45px;
   }
   #mce-EMAIL {
-    width: 416px;
+    width: 100%;
+    
     padding: 5px 12px;
-    margin-right: 40px;
 
     font-size: 28px;
     font-weight: $light;
@@ -401,6 +405,11 @@ div.weekly-sound {
     
     @include radius(8px); 
     border: none;
+
+    @media #{$large-up} {
+      margin-right: 40px;
+      width: 416px;
+    }
 
     &::-webkit-input-placeholder {
       color: $red;
@@ -432,6 +441,12 @@ div.weekly-sound {
 
     text-transform: uppercase;
     text-decoration: none;
+
+    margin-top: 5px;
+
+    @media #{$large-up} {
+      margin-top: 0;
+    }
     
     &:hover {
       border-color: $red;
@@ -479,8 +494,13 @@ div.purchase-now{
     text-transform: uppercase;
     text-decoration: none;
 
-    font-size: 34px;
+    
     font-weight: $semibold;
+    font-size: 25px;
+
+    @media #{$large-up} {
+      font-size: 34px;
+    }
 
     &:hover {
       color: $white;
